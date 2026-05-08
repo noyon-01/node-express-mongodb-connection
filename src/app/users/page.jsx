@@ -1,0 +1,11 @@
+import { usersData } from "@/components/Data"
+
+export default async function UsersPage() {
+    const users = await usersData();
+  return (
+    <div>
+        <h1 className="text-5xl text-center font-bold pt-10">This is Users Page</h1>
+        <h3 className="text-3xl text-center font-bold pt-4">Users : {users.length}</h3>
+    </div>
+  )
+}
