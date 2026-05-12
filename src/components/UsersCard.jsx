@@ -21,7 +21,7 @@ export default function UsersCard({ user, deleteUser }) {
             Details
           </Button>
         </Link>
-        <Link href={`/edit`}>
+        <Link href={`/users/${user._id}/edit`}>
           <Button className="rounded">
             <Plus />
             Edit

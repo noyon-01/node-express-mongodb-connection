@@ -3,7 +3,7 @@
 import { Plus } from "@gravity-ui/icons";
 import { Button, Input, Label, Modal, Surface, TextField } from "@heroui/react";
 
-export function AddUserModal({createUser}) {
+export function AddUserModal({ createUser }) {
   return (
     <Modal>
       <Button>
@@ -27,7 +27,7 @@ export function AddUserModal({createUser}) {
                     <Label>Email</Label>
                     <Input placeholder="Enter your email" />
                   </TextField>
-                  <TextField className="w-full" name="phone" type="tel">
+                  <TextField className="w-full" name="role">
                     <Label>Role</Label>
                     <Input placeholder="Enter your role" />
                   </TextField>
@@ -35,7 +35,9 @@ export function AddUserModal({createUser}) {
                     <Button slot="close" variant="secondary">
                       Cancel
                     </Button>
-                    <Button type="submit" slot="close">Add User</Button>
+                    <Button type="submit" slot="close">
+                      Add User
+                    </Button>
                   </Modal.Footer>
                 </form>
               </Surface>
